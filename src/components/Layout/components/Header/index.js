@@ -28,6 +28,8 @@ import {
     faKeyboard,
 } from '@fortawesome/free-regular-svg-icons';
 
+import Image from '~/components/Image';
+
 const cx = classNames.bind(styles);
 
 const MENU_ITEMS = [
@@ -173,9 +175,9 @@ function Header() {
                         onChange={handleMenuChange}
                     >
                         {currentUser ? (
-                            <img
+                            <Image
                                 className={cx('user-avatar')}
-                                alt=""
+                                alt="a"
                                 src="https://yt3.googleusercontent.com/ytc/AIdro_lW5LrmXenG5ymo3C8ngxuV0Rb6cPhTKf_t7NNYNw=s176-c-k-c0x00ffffff-no-rj"
                             />
                         ) : (
